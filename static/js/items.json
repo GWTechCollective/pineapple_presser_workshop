@@ -1,0 +1,26 @@
+var items = {
+    "pointer": {
+        "price": "1",
+        "clickValue": "1",
+    },
+    "hand": {
+        "price": "1",
+        "clickValue": "1",
+    },
+    "sundried-fruits": {
+        "price": "1",
+        "clickValue": "1",
+    },
+    "tropical-drinks": {
+        "price": "1",
+        "clickValue": "1",
+    },
+    "machete": {
+        "price": "1",
+        "clickValue": "1",
+    },
+    "pizzeria": {
+        "price": "1",
+        "clickValue": "1",
+    },
+}

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <!--Load all of our external files- our CSS, JS libraries, and our actual JS file -->
+        <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
+        <script type="text/javascript" src="./static/js/imageMapResizer.min.js"></script>
+        <script type="text/javascript" src="./static/js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="./static/js/pineapple.js"></script>
+    </head>
+    <body>
+        <div id="overlord">
+            <div id="left">
+                <h2 class="title">
+                    Pineapple
+                    <span></span>
+                </h2>
+                <!--These two containers are used to store the pineapple counter and currency display-->
+                <div class="counter-container">
+                    <h2>Counter</h2>
+                    <span id="counter">0</span>
+                </div>
+                <div class="currency-container">
+                    <h2>Currency</h2>
+                    <span id="currency">0</span>
+                </div>
+                <!--When you mouse over the pineapple image, do you see the cool highlight around it?
+                That's done through the map tag. Jeff found the values for us, what a guy-->
+                <img id="pineapple-img" src="./static/media/pineapple.png" usemap="#Map"/>
+                <map name="Map" id="Map">
+                    <area id="pineapple" href="#"
+                      shape="poly"
+                      coords="594,1408,473,987,520,754,579,687,534,511,512,237,642,8,805,12,945,35,986,343,998,693,1061,1098,1022,1337,931,1421"
+                    />
+                </map>
+            </div>
+            <!--Middle div is used to display the items purchased from the store. Actual items are represented in the list below, with
+            each list item being one "item".-->
+            <div id="middle">
+                <h2 class="title">
+                    Current Items
+                    <span></span>
+                    <ul class="itemfront">
+                      <!--This list is looking a little empty...We had the list items in JQuery -->
+                    </ul>
+                </h2>
+            </div>
+            
+            <!--The right div is the store, where people can buy stuff. We don't actually
+            load the store items in the HTML, it is accomplished all through our JS/JQuery-->
+            <div id="right">
+                <h2 class="title">
+                    Store Front
+                    <span></span>
+                </h2>
+
+                <ul class="storefront">
+                </ul>
+            </div>
+        </div>
+
+        <!--The map tag used above works because of a librayr from someone else. We load that lib here -->
+        <script type="text/javascript">
+            imageMapResize();
+        </script>
+    </body>
+</html>

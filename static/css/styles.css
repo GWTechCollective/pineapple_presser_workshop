@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "AvenirNext";
+  src: url("./fonts/AvenirNext-Regular.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: "AvenirNext";
+  src: url("./fonts/AvenirNext-Medium.ttf") format("truetype");
+  font-weight: bold; }
+*, html {
+  font-family: "AvenirNext";
+  font-weight: normal;
+  font-size: 16px;
+  display: block;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+script {
+  display: none; }
+
+div {
+  display: block; }
+
+#pointer-span {
+  background: url("../media/pointer.png");
+  background-size: 105px 50px; }
+
+#hand-span {
+  background: url("../media/gloves.png");
+  background-size: 105px 50px; }
+
+#dry-fruits-span {
+  background: url("../media/pineapple.png");
+  background-size: 105px 50px; }
+
+#trop-drinks-span {
+  background: url("../media/drink.png");
+  background-size: 105px 50px; }
+
+#machete-span {
+  background: url("../media/Machete.png");
+  background-size: 105px 50px; }
+
+#pizzeria-span {
+  background: url("../media/pizza.png");
+  background-size: 105px 50px; }
+
+#overlord {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  min-width: 900px; }
+  #overlord .counter-container {
+    margin-top: 40%;
+    position: relative;
+    text-align: center; }
+  #overlord .currency-container {
+    margin-top: 0%;
+    position: relative;
+    text-align: center; }
+  #overlord > div {
+    position: relative;
+    float: left; }
+  #overlord div#left {
+    height: inherit;
+    width: 30vw;
+    background-color: #009b3a; }
+    #overlord div#left img {
+      margin-top: 5%;
+      max-width: 100%;
+      max-height: 100%;
+      transition: all 0.5s;
+      transform: rotate(0); }
+    #overlord div#left img.click-activated {
+      transition: all 0.5s;
+      transform: rotate(360deg); }
+    #overlord div#left area:hover {
+      cursor: url("../media/pineapple-cursor.png"), auto; }
+  #overlord div#middle {
+    height: inherit;
+    width: 40vw;
+    background-color: #fedf00; }
+  #overlord div#right {
+    height: inherit;
+    width: 30vw;
+    background-color: #CE1126; }
+
+.title {
+  margin-top: 15px;
+  font-size: 24px;
+  text-align: center; }
+
+.storefront {
+  height: 100%;
+  width: 100%; }
+  .storefront li {
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    clear: left; }
+    .storefront li span {
+      vertical-align: middle;
+      padding-left: 10px; }
+    .storefront li .cost {
+      float: left; }
+    .storefront li .store-item {
+      float: left;
+      width: 80px;
+      padding-right: 15px;
+      height: inherit; }
+    .storefront li:nth-child(even) {
+      background: white; }
+    .storefront li:nth-child(odd) {
+      background: gray; }
+    .storefront li button {
+      float: right;
+      height: 100%; }
+      .storefront li button:hover {
+        cursor: url("../media/money-bag-icon.png"), auto; }
+
+.itemfront {
+  height: 100%;
+  width: 100%; }
+  .itemfront li {
+    height: calc((100vh - 45px)/6);
+    line-height: calc((100vh - 45px)/6);
+    position: relative;
+    clear: left; }
+    .itemfront li .item {
+      padding: 0;
+      height: 10px;
+      width: 10px;
+      background: red;
+      display: inline-block;
+      border-radius: 1000px; }
+    .itemfront li:nth-child(even) {
+      background: white; }
+      .itemfront li:nth-child(even) div {
+        background: #E71600; }
+        .itemfront li:nth-child(even) div:nth-child(even) {
+          background: #fcd116; }
+        .itemfront li:nth-child(even) div:nth-child(odd) {
+          background: #100EFF; }
+    .itemfront li:nth-child(odd) {
+      background: #002B7F; }
+      .itemfront li:nth-child(odd) div:nth-child(even) {
+        background: #FFFFFF; }
+      .itemfront li:nth-child(odd) div:nth-child(odd) {
+        background: #CE1126; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,197 @@
+@import './partials/_fonts';
+
+
+*, html {
+    font-family: "AvenirNext";
+    font-weight: normal;
+    font-size: 16px;
+    display: block;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+script {
+    display: none;
+}
+
+div {
+    display: block;
+}
+
+#pointer-span {
+    background: url("../media/pointer.png");
+    background-size: 105px 50px;
+}
+
+#hand-span {
+    background: url("../media/gloves.png");
+    background-size: 105px 50px;
+}
+
+#dry-fruits-span {
+    background: url("../media/pineapple.png");
+    background-size: 105px 50px;
+}
+
+#trop-drinks-span {
+    background: url("../media/drink.png");
+    background-size: 105px 50px;
+}
+
+#machete-span {
+    background: url("../media/Machete.png");
+    background-size: 105px 50px;
+}
+
+#pizzeria-span {
+    background: url("../media/pizza.png");
+    background-size: 105px 50px;
+}
+
+// Containers
+#overlord {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    min-width: 900px;
+    .counter-container {
+        margin-top: 40%;
+        position: relative;
+        text-align: center;
+    }
+    .currency-container {
+        margin-top: 0%;
+        position: relative;
+        text-align: center;
+    }
+
+    > div {
+        position: relative;
+        float: left;
+    }
+
+    div#left {
+        height: inherit;
+        width: 30vw;
+        background-color: #009b3a;
+        img {
+            margin-top: 5%;
+            max-width: 100%;
+            max-height: 100%;
+            transition: all 0.5s;
+            transform: rotate(0);
+        }
+
+        img.click-activated {
+            transition: all 0.5s;
+            transform: rotate(360deg);
+        }
+
+        area {
+            &:hover {
+                cursor:  url("../media/pineapple-cursor.png"), auto;
+            }
+
+        }
+    }
+
+    div#middle {
+        height: inherit;
+        width: 40vw;
+        background-color: #fedf00	;
+    }
+
+    div#right {
+        height: inherit;
+        width: 30vw;
+        background-color: 	#CE1126;
+    }
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+// Store
+.storefront {
+    height: 100%;
+    width: 100%;
+    li {
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        clear: left;
+
+        span {
+            vertical-align: middle;
+            padding-left: 10px;
+        } .cost {
+            float: left;
+        } .store-item {
+            float: left;
+            width: 80px;
+            padding-right: 15px;
+            height: inherit;
+        }
+
+        &:nth-child(even) {
+            background: white;
+        }
+        &:nth-child(odd) {
+            background: gray;
+        }
+        button {
+            float: right;
+            height: 100%;
+            &:hover {
+                cursor:  url("../media/money-bag-icon.png"), auto;
+            }
+        }
+    }
+}
+
+// Item
+.itemfront {
+    height: 100%;
+    width: 100%;
+    li {
+        height: calc((100vh - 45px)/6);
+        line-height: calc((100vh - 45px)/6);
+        position: relative;
+        clear: left;
+        .item {
+            padding: 0;
+            height: 10px;
+            width: 10px;
+            background: red;
+            display: inline-block;
+            border-radius: 1000px;
+        }
+        &:nth-child(even) {
+            background: white;
+            div {
+                background: #E71600;
+                &:nth-child(even) {
+                    background: #fcd116;
+                }
+                &:nth-child(odd) {
+                    background: #100EFF;
+                }
+            }
+        }
+        &:nth-child(odd) {
+            background: #002B7F;
+            div {
+                &:nth-child(even) {
+                    background: #FFFFFF;
+                }
+                &:nth-child(odd) {
+                    background: #CE1126;
+                }
+            }
+        }
+    }
+}
